@@ -1,0 +1,20 @@
+<header>
+<div class="navbar navbar-dark bg-danger shadow-sm">
+<div class="navbar-brand.align-item-center d-flex" >
+ <img src="../../../assets/images/shipped.png" alt="" style="height: 50px; ">&nbsp;
+ 
+  <strong style="font-size:30px; color: white;">EKart</strong>
+  <div class="form-group">
+    <input type="text" class="form-control" [(ngModel)] = "searchTerm" (keyup)="search($event)" placeholder="Search Products">
+ 
+  <span>
+    <img src="../../../assets/images/search.png" alt="" class="search-icon">
+  </span>
+</div>
+</div>
+<div style="margin-right: 50px;">
+<button routerLink="/cart" class="btn btn-danger"> <img src="../../../assets/images/shopping-cart.png" class="cart">
+  <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+</button>
+</div>
+</div>
